@@ -44,6 +44,7 @@
 }
 
 .body-m{
+    text-align: justify;
     font-size: 16px;
     line-height: 150%;
     color: var(--dark-electric-blue);
@@ -300,16 +301,6 @@ box-sizing: border-box;
     width: 14rem;
     padding-right: 1rem;
     margin-top: 1.5rem;
-}
-
-.curve-left{
-    position: absolute;
-    top: -40%;
-    right: 13%;
-}
-
-.curve-left img{
-    width: 5.8rem !important;
 }
 
 .bmi-meaning-container{
