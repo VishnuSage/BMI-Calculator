@@ -61,11 +61,11 @@ function calculateMetricBMI (heightMeters, weightKg) {
 
     //weight class
     if (bmi > 24.9) {
-        healthy.innerHTML = "overweight"
+        healthy.innerHTML = "<b>overweight<b>"
     }else if (bmi < 18.5){
-        healthy.innerHTML = "underweight"
+        healthy.innerHTML = "<b>underweight<b>"
     }else{
-        healthy.innerHTML = "at a healthy weight"
+        healthy.innerHTML = "at a <b>healthy weight<b>"
     }
 
     //weight range
@@ -93,11 +93,11 @@ function weightClassRange() {
     let bmi2 = (calculateWeightConversion(st.value, lbs.value) / calculateHeightConversion(ft.value, inch.value)).toFixed(1)
 
     if (bmi2 > 24.9) {
-        healthy.innerHTML = "overweight"
+        healthy.innerHTML = "<b>overweight<b>"
     }else if (bmi2 < 18.5){
-        healthy.innerHTML = "underweight"
+        healthy.innerHTML = "<b>underweight<b>"
     }else{
-        healthy.innerHTML = "at a healthy weight"
+        healthy.innerHTML = "at a <b>healthy weight<b>"
     }
 
     let lowerWeight = (18.5 * calculateHeightConversion(ft.value, inch.value)) * 2.205
