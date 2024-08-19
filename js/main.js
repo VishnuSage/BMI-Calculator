@@ -4,6 +4,16 @@ let inputImperial = document.getElementById("inputImperial")
 let inputMetric = document.getElementById("inputMetric")
 let space = document.getElementById("space")
 
+// Initialize the dropdown
+$(document).ready(function () {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    dropdownToggle.addEventListener('click', function () {
+      dropdownMenu.classList.toggle('show');
+    });
+  });
+
 //metric values
 let cm = document.getElementById("cm")
 let kg = document.getElementById("kg")
